@@ -1,0 +1,13 @@
+@media (min-width: 900px) and (max-width: 1300px) {
+    #qse{
+        text-align: left;
+    }
+
+    #sobre_img{
+        width: 400px;
+        height: auto;
+        border-radius: 300px;
+        margin: 150px 250px -50px 250px;
+        display: inline-block;
+    }
+}

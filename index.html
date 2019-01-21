@@ -7,6 +7,8 @@
         <!--Estilos-->
         <!--<link rel='stylesheet' href="/assets/css/bootstrap.css" />-->
         <link rel='stylesheet' href="assets/css/style.css?new" />
+        <link rel='stylesheet' href="assets/css/mobile.css" />
+        <link rel='stylesheet' href="assets/css/middle.css" />
         
         <!--Bibliotecas-->
         <script src='assets/js/jquery.js'></script>
@@ -17,6 +19,7 @@
     <body>
         <div class='menu'>
             <h3>vanderlei.ga</h3>
+            <div id="menu"><div id="mbut">Menu</div></div>
             <ul class='mnav'>
                 <li><a ng-class="{active: activetab == '/'}" href='#' >Por que?</a></li>
                 <li><a ng-class="{active: activetab == '/quem-sou-eu'}" href='#quem-sou-eu'>Quem é Gabriel Vanderlei?</a></li>
@@ -25,7 +28,7 @@
             </ul>
         </div>
 
-        <div ng-view></div>
+        <div id="content" ng-view></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>

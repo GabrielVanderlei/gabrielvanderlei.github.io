@@ -1,6 +1,14 @@
 
+$("#mbut").on("click touch", function(){$(".mnav").toggle()});
+
 app.controller('Controller', function($rootScope, $location)
 {
+    if(window.innerWidth < 600){
+        $("#content *").on("click touch", function(){$(".mnav").css("display", "none")});
+    }
+    
+    //setTimeout('$("#content").css("opacity", 1)', 10);
+
     $rootScope.activetab = $location.path();
     $rootScope.products = [];
     $rootScope.socials = [];

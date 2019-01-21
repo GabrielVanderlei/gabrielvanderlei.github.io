@@ -1,0 +1,193 @@
+@media (max-width: 900px) {
+    body{
+        padding: 0;
+        margin: 0;
+        background: rgb(30, 50, 100);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: lighter;
+        padding-bottom: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    #content{
+        padding-top: 50px;
+        opacity: 1;
+        z-index: 0;
+        transition: all 0.3s;
+    }
+
+    .menu{
+        z-index: 100;
+        text-align: left;
+        background: white;
+        color: black;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+
+    .menu h3{
+        padding: 9px 15px;
+        margin: 0;
+        font-weight: lighter;
+    }
+
+    .active{
+        font-weight: bold;
+    }
+
+    #menu{
+        position: absolute;
+        width: 100%;
+        text-align: right;
+        top: 0;
+
+    }
+
+    #mbut{
+        padding: 3px 15px;
+        background:rgb(30, 50, 100);
+        display: inline-block;
+        border-radius: 300px;
+        margin: 9px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mnav{
+        display: none;
+        margin: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mnav li{
+        margin:  0;
+        display: block;
+        width: auto!important;
+    }
+    
+    .mnav a{
+        display: block;
+        padding: 5px 15px;
+        color: black;
+        background: white;
+        text-decoration: none;
+        width: auto!important;
+    }
+
+    .box{
+        padding: 10%;
+    }
+
+    .box h1{
+        font-weight: lighter;
+    }
+
+    .box h2{
+        font-weight: lighter;
+    }
+
+    #morevis{
+        background: white;
+        color: black;
+        padding: 5%;
+        margin: 0 5%;
+        border-radius: 5px;
+        border-bottom: 4px solid rgb(30, 30, 80);
+    }
+
+    #morevis h2{
+        font-weight: bold;
+    }
+
+    #morevis small{
+        font-weight: lighter;
+    }
+
+    #sobre_img{
+        border-radius: 300px;
+        width: auto;
+        height: 300px;
+        margin: 50px 0 0px;
+    }
+
+    #about h1{
+        font-weight: lighter;
+        font-size: 45px;
+    }
+
+    #about small{
+        font-weight: bolder;
+        font-size: 25px;
+        display: block;
+    }
+
+    #texto_about{
+        padding: 0 10% 10px;
+        line-height: 35px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .work{
+        height: auto;
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 0 7px rgba(0,0,0,0.3);;
+    }
+
+    .work img{
+        width: 100%;
+        height: auto;
+        margin-bottom: -4px;
+    }
+
+    .work .text{
+        background: white;
+        padding: 9px;
+        font-size: 18px;
+    }
+
+    .work .url{
+        background: white;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: -1px;
+    }
+    
+    .contact{
+        padding-bottom: 0px!important;
+    }
+
+    .social{
+        color: black;
+        text-decoration: none;
+        background: white;
+        display: block;
+        border-radius: 5px;
+        padding: 35px;
+        box-shadow: 0 0 7px rgba(0,0,0,0.3);
+        text-align: center;
+        margin: 20px 30px;
+    }
+
+    .social .img{
+        height: 50px;
+        width: auto;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    .social .text{
+        display: block;
+        font-size: 30px;
+        padding: 0px;
+    }
+}

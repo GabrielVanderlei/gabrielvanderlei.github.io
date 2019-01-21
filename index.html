@@ -1,24 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿<!DOCTYPE html>
+<html ng-app="app">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Gabriel Vanderlei." />
-        <meta name="description" content="Meu nome é Gabriel Vanderlei, eu sou um desenvolvedor de sites e aplicativos, estudo no IFPE." />
-        <meta name="keywords" content="Desenvolvedor, Web, Programador, PHP, HTML, CSS, JavaScript, Gabriel, Vanderlei, Gabriel Vanderlei" />
+        <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+        <title>Gabriel Vanderlei.</title>
+        <!--Estilos-->
+        <!--<link rel='stylesheet' href="/assets/css/bootstrap.css" />-->
+        <link rel='stylesheet' href="assets/css/style.css" />
         
-        <title>Gabriel Vanderlei</title>
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        <!--Bibliotecas-->
+        <script src='assets/js/jquery.js'></script>
+        <!--<script src='/assets/js/bootstrap.js'></script>-->
+        <script src='assets/js/firebase.js'></script>
+        <script src='assets/js/script.js'></script>
     </head>
     <body>
-        <img src='https://scontent.frec3-2.fna.fbcdn.net/v/t1.0-9/41365640_2198467726862324_6959276384636108800_n.jpg?_nc_cat=0&oh=df3af96baf706d9aaff4aa1786f91a71&oe=5C239723' />
-        <h1>Gabriel Vanderlei de Oliveira</h1>
-        <h2>Desenvolvedor Freelancer | <a href='//github.com/GabrielVanderlei'>@gabrielvanderlei</a></h2>
-        <p><a href='mailto:gabrielvanderlei11@gmail.com'>gabrielvanderlei11@gmail.com</a></p>
-        
-        <p class='text'>
-            Desenvolvedor de sites desde 2008. Atualmente é Coordernador de T.I. do Instituto Internacional Despertando Vocações e estudante do curso técnico em Eletrônica no Instituto Federal de Pernambuco.
-            Exemplos de trabalhos disponíveis no <a href='//github.com/gabrielvanderlei'>Github</a> ou nos sites ligados ao <a href='//institutoidv.org'>Instituto Internacional Despertando Vocações</a>.
-        </p>
+        <div class='menu'>
+            <h3>vanderlei.ga</h3>
+            <ul class='mnav'>
+                <li><a ng-class="{active: activetab == '/'}" href='#' >Por que?</a></li>
+                <li><a ng-class="{active: activetab == '/quem-sou-eu'}" href='#quem-sou-eu'>Quem é Gabriel Vanderlei?</a></li>
+                <li><a ng-class="{active: activetab == '/meus-trabalhos'}" href='#meus-trabalhos'>Meus trabalhos</a></li>
+                <li><a ng-class="{active: activetab == '/contato'}" href='#contato'>Contato</a></li>
+            </ul>
+        </div>
+
+        <div ng-view></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/controllers/controllers.js"></script>
     </body>
 </html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /#/ 
+Allow: /#/quem-sou-eu
+Allow: /#/meus-trabalhos
+Allow: /#/contato
+Sitemap: https://vanderlei.ga/sitemap.xml

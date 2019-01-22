@@ -8,3 +8,11 @@
     <div class="text">{{ social.user }}</div>
 </a>
 </div>
+<div class='box white'>
+    <h2>Se quiser pode utilizar o meu formulário de contato.</h2>
+    <form onsubmit="enviarEmail();return false;">
+        <input class='textInp' id="subject" type="text" placeholder="Título do projeto? Empresa?" /><br />
+        <textarea class='textArea' id="body" placeholder="Me dê detalhes sobre o projeto."></textarea><br />
+        <input type='submit' class='button' />
+    </form>
+</div>

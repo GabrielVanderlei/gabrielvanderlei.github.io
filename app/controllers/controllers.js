@@ -3,11 +3,37 @@ $("#mbut").on("click touch", function(){$(".mnav").toggle()});
 
 app.controller('Controller', function($rootScope, $location)
 {
-    if(window.innerWidth < 600){
+    if(window.innerWidth < 900){
         $("#content *").on("click touch", function(){$(".mnav").css("display", "none")});
     }
     
+    /** 
+    Email.send({
+        SecureToken : "f44bcba5-502a-419e-b4be-3ad7fabb8bd5",
+        To : 'contato@vanderlei.ga',
+        From : "contato@vanderlei.ga",
+        Subject : "Contato",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );**/
+
     //setTimeout('$("#content").css("opacity", 1)', 10);
+
+    var titleVar = {
+        "/": "Por que ter um site? | vanderlei.ga",
+        "/index.html": "Gabriel Vanderlei | vanderlei.ga",
+        "/quem-sou-eu": "Quem sou eu? | vanderlei.ga",
+        "/meus-trabalhos": "Portfólio | vanderlei.ga",
+        "/contato": "Contato | vanderlei.ga",
+    };
+
+    document.title = titleVar[$location.path()];
+
+    gtag('config', 'UA-132888969-1',  {
+        'page_title' : titleVar[$location.path()],
+        'page_path': $location.path()
+    });
 
     $rootScope.activetab = $location.path();
     $rootScope.products = [];

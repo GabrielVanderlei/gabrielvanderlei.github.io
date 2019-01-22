@@ -149,43 +149,39 @@
         text-align: center;
     }
 
-    #about{
-        color:white;
-        float: right;
-        padding: 10% 0% 10% 0%;
-        width: 900px;
-    }
-
-    #about h1{
-        font-size: 50px;
-        font-weight: lighter;
-        margin: 0;
-        padding: 0;
-    }
-
-    #about small{
-        font-size: 28px;
-        font-weight: normal;
-        background: white;
-        border-radius: 5px;
-        color:black;
-        padding: 9px;
+    #qse{
+        text-align: center;
+        color: white;
+        padding: 40px 15%;
     }
 
     #sobre_img{
-        width: 400px;
-        height: auto;
+        display: inline-block;
         border-radius: 300px;
-        margin: 100px;
+        width: auto;
+        height: 300px;
+        margin: 40px 0 0px;
+    }
+
+    #about h1{
+        text-align: center;
+        font-weight: lighter;
+        font-size: 45px;
+        display: inline-block;
+    }
+
+    #about small{
+        font-weight: bolder;
+        font-size: 25px;
+        display: block;
+        display: inline-block;
     }
 
     #texto_about{
-        color: white;
-        padding: 40px 0;
+        padding: 0 10% 10px;
+        line-height: 35px;
         font-size: 20px;
         text-align: justify;
-        width: 700px;
-        line-height: 35px;
     }
 
     #linguagens{
